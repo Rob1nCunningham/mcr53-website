@@ -87,7 +87,11 @@ section{ padding:96px 64px; }
 }
 .navbar-left{ display:flex; align-items:center; gap:20px; }
 .navbar-right{ display:flex; align-items:center; gap:20px; }
+.navbar .logo{ display:block; }
 .navbar .logo img{ height:34px; width:auto; }
+.navbar .logo .logo-dark{ display:none; }
+:root[data-theme="dark"] .navbar .logo-light{ display:none; }
+:root[data-theme="dark"] .navbar .logo-dark{ display:block; }
 .nav-links{ display:flex; align-items:center; gap:40px; }
 .nav-links a{ font-weight:600; font-size:15px; color:var(--heading); }
 .nav-links a.active{ font-weight:700; color:var(--red); }
