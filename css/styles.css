@@ -228,6 +228,31 @@ section{ padding:96px 64px; }
 .process-step h3{ font-size:16px; font-weight:700; color:var(--heading); }
 .process-step p{ font-size:14px; line-height:1.6; color:var(--muted); }
 
+/* ---------- Flex team ---------- */
+
+.role-pills{ display:flex; flex-wrap:wrap; gap:16px; }
+.role-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:14px 22px;
+  border:1px solid var(--line);
+  border-left:3px solid var(--red);
+  background:var(--surface);
+  color:var(--heading);
+  font-weight:700;
+  font-size:14px;
+  transition:background-color 0.2s ease, border-color 0.2s ease;
+}
+.role-pill::before{ content:""; width:6px; height:6px; background:var(--red); flex:none; }
+.role-pill-more{
+  border-left-color:var(--line);
+  color:var(--muted);
+  font-weight:600;
+  background:none;
+}
+.role-pill-more::before{ display:none; }
+
 /* ---------- Values ---------- */
 
 .values-grid{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:28px; }
