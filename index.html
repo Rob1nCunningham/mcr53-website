@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MCR53 — Product &amp; Transformation Consultancy</title>
   <meta name="description" content="MCR53 helps organisations move from strategy to delivered product and transformation outcomes.">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('mcr53-theme');
+        var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
@@ -17,15 +26,23 @@
 
   <!-- NAV -->
   <nav class="navbar">
-    <a class="logo" href="#top"><img src="images/mcr53-logo.png" alt="MCR53"></a>
+    <div class="navbar-left">
+      <a class="logo" href="#top"><img src="images/mcr53-logo.png" alt="MCR53"></a>
+      <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4.5"/><line x1="12" y1="19.5" x2="12" y2="22"/><line x1="4.2" y1="4.2" x2="6" y2="6"/><line x1="18" y1="18" x2="19.8" y2="19.8"/><line x1="2" y1="12" x2="4.5" y2="12"/><line x1="19.5" y1="12" x2="22" y2="12"/><line x1="4.2" y1="19.8" x2="6" y2="18"/><line x1="18" y1="6" x2="19.8" y2="4.2"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      </button>
+    </div>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#contact" class="btn btn-primary nav-cta-mobile">Get in touch</a></li>
     </ul>
-    <a href="#contact" class="btn btn-primary nav-cta">Get in touch</a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="navbar-right">
+      <a href="#contact" class="btn btn-primary nav-cta">Get in touch</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
   </nav>
 
   <!-- HERO -->
@@ -153,7 +170,7 @@
         <p>That approach is grounded in hands-on experience across two of the most heavily regulated industries there are — fintech and gambling — leading transformation work spanning compliance, payments and fraud, and retail security, with process design at the centre of all of it: the systems and rituals that make regulated change safe to ship, not just safe to approve.</p>
       </div>
       <div class="photo-placeholder">
-        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#5b6472" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" style="stroke:var(--muted)" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
         <span>[Add founder photo]</span>
       </div>
     </div>
