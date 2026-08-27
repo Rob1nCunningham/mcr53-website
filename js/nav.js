@@ -14,4 +14,17 @@ document.addEventListener('DOMContentLoaded', function () {
       toggle.setAttribute('aria-expanded', 'false');
     });
   });
+
+  var themeToggle = document.querySelector('.theme-toggle');
+  if (themeToggle) {
+    var root = document.documentElement;
+    themeToggle.setAttribute('aria-pressed', root.getAttribute('data-theme') === 'dark' ? 'true' : 'false');
+
+    themeToggle.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      themeToggle.setAttribute('aria-pressed', next === 'dark' ? 'true' : 'false');
+      try { localStorage.setItem('mcr53-theme', next); } catch (e) {}
+    });
+  }
 });
