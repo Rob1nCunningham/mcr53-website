@@ -13,21 +13,22 @@
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
-<body>
+<body id="top">
 
+  <!-- NAV -->
   <nav class="navbar">
-    <a class="logo" href="index.html"><img src="images/mcr53-logo.png" alt="MCR53"></a>
+    <a class="logo" href="#top"><img src="images/mcr53-logo.png" alt="MCR53"></a>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="contact.html" class="btn btn-primary nav-cta-mobile">Get in touch</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="btn btn-primary nav-cta-mobile">Get in touch</a></li>
     </ul>
-    <a href="contact.html" class="btn btn-primary nav-cta">Get in touch</a>
+    <a href="#contact" class="btn btn-primary nav-cta">Get in touch</a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
 
+  <!-- HERO -->
   <section class="hero">
     <svg class="crosshair" width="180" height="180" viewBox="0 0 180 180" style="top:-30px;right:20px;opacity:0.5;">
       <line x1="90" y1="0" x2="90" y2="180" stroke="#b7221e" stroke-width="1"/>
@@ -42,62 +43,204 @@
     <h1>We turn product ambition into delivered transformation.</h1>
     <p>MCR53 helps organisations move from strategy decks to working product — designing the strategy, operating model and delivery capability to make change stick.</p>
     <div class="hero-actions">
-      <a href="contact.html" class="btn btn-primary">Start a conversation</a>
-      <a href="services.html" class="btn btn-outline">See our services</a>
+      <a href="#contact" class="btn btn-primary">Start a conversation</a>
+      <a href="#services" class="btn btn-outline">See our services</a>
     </div>
   </section>
 
-  <section>
+  <!-- SERVICES -->
+  <section id="services" style="scroll-margin-top:92px;">
     <div class="section-head">
-      <div class="eyebrow">What we do</div>
-      <h2>Where we help</h2>
+      <div class="eyebrow">Services</div>
+      <h2>Product and transformation expertise, applied where it matters.</h2>
+      <p style="margin-top:16px;color:var(--muted);font-size:16px;line-height:1.6;">Five ways we help organisations move from ambition to delivered outcomes — used together or on their own.</p>
     </div>
-    <div class="cards-grid">
+    <div class="cards-grid cols-3">
 
       <div class="card">
         <div class="card-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="14.5,9.5 12,12 9.5,14.5" fill="#fff" stroke="none"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="14.5,9.5 12,12 9.5,14.5" fill="#fff" stroke="none"/></svg>
         </div>
         <h3>Product Strategy &amp; Roadmapping</h3>
-        <p>Translate ambiguous goals into a prioritised, evidence-led product strategy your teams can actually execute against.</p>
+        <p>Translate ambiguous goals into a prioritised, evidence-led product strategy your teams can actually execute against — not a deck that sits on a shelf.</p>
       </div>
 
       <div class="card">
         <div class="card-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="12,3 21,8 12,13 3,8"/><polyline points="3,13 12,18 21,13"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="12,3 21,8 12,13 3,8"/><polyline points="3,13 12,18 21,13"/></svg>
         </div>
         <h3>Transformation Delivery</h3>
-        <p>Hands-on programme leadership that keeps large-scale change moving, from mobilisation through to embedded practice.</p>
+        <p>Hands-on programme leadership that keeps large-scale change moving — from mobilisation through to embedded practice, not a handover slide.</p>
       </div>
 
       <div class="card">
         <div class="card-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
         </div>
-        <h3>Operating Model Design</h3>
-        <p>The roles, rituals and governance that let product teams make good decisions quickly, at scale.</p>
+        <h3>Product Operating Model Design</h3>
+        <p>The roles, rituals and governance that let product teams make good decisions quickly, at scale, without adding layers of process.</p>
       </div>
 
       <div class="card">
         <div class="card-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15.5" y2="15.5"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15.5" y2="15.5"/></svg>
         </div>
-        <h3>Discovery &amp; Assessment</h3>
-        <p>An honest, evidence-based read on where a product organisation stands, before you commit budget or headcount.</p>
+        <h3>Discovery, Due Diligence &amp; Assessment</h3>
+        <p>An honest, evidence-based read on where a product organisation really stands, before you commit budget or headcount.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="3,17 9,11 13,15 21,7"/><polyline points="15,7 21,7 21,13"/></svg>
+        </div>
+        <h3>Team &amp; Capability Uplift</h3>
+        <p>Coaching and structured support that builds lasting product capability inside your organisation, not dependency on us.</p>
       </div>
 
     </div>
   </section>
 
+  <!-- HOW WE WORK -->
+  <section style="padding-top:20px;">
+    <div class="section-head">
+      <div class="eyebrow">How we work</div>
+      <h2>A simple, repeatable rhythm</h2>
+    </div>
+    <div class="process">
+      <div class="process-step">
+        <div class="process-num">01</div>
+        <h3>Discover</h3>
+        <p>Understand the real problem, the constraints and where the organisation already agrees.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">02</div>
+        <h3>Define</h3>
+        <p>Set a strategy, model or plan that is specific enough to act on and honest about trade-offs.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">03</div>
+        <h3>Deliver</h3>
+        <p>Work alongside your teams to ship the change, not just recommend it from the sidelines.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">04</div>
+        <h3>Embed</h3>
+        <p>Leave behind capability and habits that outlast the engagement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
   <section class="cta-band">
     <svg class="crosshair" width="120" height="120" viewBox="0 0 120 120" style="top:-20px;left:-20px;opacity:0.35;">
       <line x1="60" y1="0" x2="60" y2="120" stroke="#b7221e" stroke-width="1"/>
       <line x1="0" y1="60" x2="120" y2="60" stroke="#b7221e" stroke-width="1"/>
     </svg>
     <h2>Ready to talk transformation?</h2>
-    <a href="contact.html" class="btn btn-primary">Book an introductory call</a>
+    <a href="#contact" class="btn btn-primary">Book an introductory call</a>
   </section>
 
+  <!-- ABOUT -->
+  <section id="about" style="scroll-margin-top:92px;">
+    <div class="section-head">
+      <div class="eyebrow">About MCR53</div>
+      <h2>Product and transformation expertise, applied with rigour.</h2>
+    </div>
+    <div class="about-grid">
+      <div>
+        <h2>Why MCR53</h2>
+        <p>MCR53 exists because too much transformation work stalls between the strategy deck and delivery reality. We work at that gap — close enough to the detail to be useful, senior enough to change how decisions get made.</p>
+        <p>[Add 2–3 sentences here on your background: the industries you've worked in, the scale of the organisations and transformations you've led, and what led you to start MCR53.]</p>
+      </div>
+      <div class="photo-placeholder">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#5b6472" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+        <span>[Add founder photo]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section style="padding-top:20px;">
+    <div class="section-head">
+      <div class="eyebrow">How we think</div>
+      <h2>Three principles that don't move</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value">
+        <h3>Pragmatic, not theoretical</h3>
+        <p>Frameworks earn their place only if they change a decision. We start from your constraints, not a template.</p>
+      </div>
+      <div class="value">
+        <h3>Outcomes over outputs</h3>
+        <p>A roadmap is only as good as what it changes for customers and the business. We measure ourselves against that.</p>
+      </div>
+      <div class="value">
+        <h3>Embedded, not distant</h3>
+        <p>We work inside your teams, not from a slide deck at arm's length — so the capability stays after we leave.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="scroll-margin-top:92px;">
+    <div class="section-head">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Let's talk about your transformation.</h2>
+      <p style="margin-top:16px;color:var(--muted);font-size:16px;line-height:1.6;">Tell us where you're starting from — we'll tell you honestly whether we can help.</p>
+    </div>
+    <div class="contact-grid">
+
+      <div class="contact-details">
+        <div>
+          <div class="label">Email</div>
+          <a class="value" href="mailto:hello@mcr53.co.uk">[hello@mcr53.co.uk]</a>
+        </div>
+        <div>
+          <div class="label">Phone</div>
+          <span class="value">[Add phone number]</span>
+        </div>
+        <div>
+          <div class="label">LinkedIn</div>
+          <a class="value" href="#">[Add LinkedIn URL]</a>
+        </div>
+        <div>
+          <div class="label">Based in</div>
+          <span class="value">[Confirm base location]</span>
+        </div>
+      </div>
+
+      <!--
+        This form has no backend yet — submitting it will not send an email.
+        Wire it up with a form service (e.g. Formspree, Netlify Forms) before launch.
+        See the handover notes for how.
+      -->
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-row">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@company.com">
+          </div>
+        </div>
+        <div>
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" placeholder="Your organisation">
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="What are you trying to solve?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status">This form isn't connected to an inbox yet — see the site handover notes.</p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-top">
       <div class="footer-brand">
@@ -107,10 +250,10 @@
       <div class="footer-cols">
         <div class="footer-col">
           <div class="footer-col-title">Navigate</div>
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <a href="#top">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </div>
         <div class="footer-col">
           <div class="footer-col-title">Get in touch</div>
