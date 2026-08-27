@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — MCR53</title>
+  <meta name="description" content="Get in touch with MCR53 about your product or transformation challenge.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="logo" href="index.html"><img src="images/mcr53-logo.png" alt="MCR53"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="btn btn-primary nav-cta-mobile">Get in touch</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary nav-cta">Get in touch</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+
+  <section class="page-header">
+    <svg class="crosshair" width="140" height="140" viewBox="0 0 140 140" style="top:-10px;right:40px;opacity:0.4;">
+      <line x1="70" y1="0" x2="70" y2="140" stroke="#b7221e" stroke-width="1"/>
+      <line x1="0" y1="70" x2="140" y2="70" stroke="#b7221e" stroke-width="1"/>
+      <rect x="62" y="62" width="16" height="16" fill="#b7221e"/>
+    </svg>
+    <div class="eyebrow">Get in touch</div>
+    <h1>Let's talk about your transformation.</h1>
+    <p>Tell us where you're starting from — we'll tell you honestly whether we can help.</p>
+  </section>
+
+  <section>
+    <div class="contact-grid">
+
+      <div class="contact-details">
+        <div>
+          <div class="label">Email</div>
+          <a class="value" href="mailto:hello@mcr53.co.uk">[hello@mcr53.co.uk]</a>
+        </div>
+        <div>
+          <div class="label">Phone</div>
+          <span class="value">[Add phone number]</span>
+        </div>
+        <div>
+          <div class="label">LinkedIn</div>
+          <a class="value" href="#">[Add LinkedIn URL]</a>
+        </div>
+        <div>
+          <div class="label">Based in</div>
+          <span class="value">[Confirm base location]</span>
+        </div>
+      </div>
+
+      <!--
+        This form has no backend yet — submitting it will not send an email.
+        Wire it up with a form service (e.g. Formspree, Netlify Forms) before launch.
+        See the handover notes for how.
+      -->
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-row">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@company.com">
+          </div>
+        </div>
+        <div>
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" placeholder="Your organisation">
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="What are you trying to solve?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status">This form isn't connected to an inbox yet — see the site handover notes.</p>
+      </form>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-wordmark">MCR<span>53</span></div>
+        <p>Product &amp; Transformation Consultancy.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <div class="footer-col-title">Navigate</div>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Get in touch</div>
+          <a href="mailto:hello@mcr53.co.uk">[hello@mcr53.co.uk]</a>
+          <a href="#">[Add LinkedIn URL]</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 MCR53. All rights reserved.</span>
+      <span>[Company registered in England &amp; Wales, No. XXXXXXX]</span>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
