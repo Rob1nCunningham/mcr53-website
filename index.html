@@ -244,32 +244,30 @@
         </div>
       </div>
 
-      <!--
-        This form has no backend yet — submitting it will not send an email.
-        Wire it up with a form service (e.g. Formspree, Netlify Forms) before launch.
-        See the handover notes for how.
-      -->
-      <form class="contact-form" onsubmit="return false;">
-        <div class="form-row">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name">
+      <form class="contact-form" id="contact-form" method="POST" action="https://formspree.io/f/xjyvbdkp">
+        <input type="hidden" name="_subject" value="New enquiry from mcr53.co.uk">
+        <div class="form-fields" id="form-fields">
+          <div class="form-row">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            </div>
           </div>
           <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@company.com">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Your organisation">
           </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What are you trying to solve?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
         </div>
-        <div>
-          <label for="company">Company</label>
-          <input type="text" id="company" name="company" placeholder="Your organisation">
-        </div>
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="What are you trying to solve?"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send message</button>
-        <p class="form-status">This form isn't connected to an inbox yet — see the site handover notes.</p>
+        <p class="form-status" id="form-status"></p>
       </form>
 
     </div>
@@ -304,5 +302,6 @@
   </footer>
 
   <script src="js/nav.js"></script>
+  <script src="js/contact-form.js"></script>
 </body>
 </html>

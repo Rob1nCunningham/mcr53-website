@@ -2,12 +2,13 @@ MCR53 website — handover notes
 ===============================
 
 WHAT'S HERE
-  index.html      The whole site — one scrolling page (Hero, Services,
-                  How We Work, About, Values, Contact), nav links
-                  jump to sections by anchor (#services, #about, #contact)
-  css/styles.css  All styling
-  js/nav.js       Mobile menu toggle
-  images/         Logo
+  index.html          The whole site — one scrolling page (Hero, Services,
+                      How We Work, About, Values, Contact), nav links
+                      jump to sections by anchor (#services, #about, #contact)
+  css/styles.css      All styling
+  js/nav.js           Mobile menu toggle + dark/light mode toggle
+  js/contact-form.js  Contact form submission (see below)
+  images/             Logo
 
 This is a plain static site — no build step, no framework. Open
 index.html directly in a browser to preview it, or see "Going live"
@@ -24,14 +25,13 @@ BEFORE YOU LAUNCH — replace these placeholders
     - [Add founder photo]                  → About section (replace the
       dashed placeholder box with a real <img>)
 
-THE CONTACT FORM ISN'T WIRED UP
-  The Contact section has a real-looking form, but plain HTML/CSS/JS
-  can't send email on its own — it needs a backend. Easiest options:
-    - Netlify Forms (if you host on Netlify — add `data-netlify="true"`
-      to the <form> tag and it just works, no code)
-    - Formspree (formspree.io) — free tier, works on any host, you
-      just point the form's `action` at the endpoint they give you
-  Until one of these is wired up, submitting the form does nothing.
+THE CONTACT FORM
+  Wired up via Formspree (formspree.io) — submissions email straight
+  to whichever inbox the Formspree form is registered to. The form
+  submits via JS (js/contact-form.js) so visitors see an inline
+  "thanks" message rather than leaving the page. To point it at a
+  different Formspree form (or a different inbox), update the
+  `action` URL on the <form id="contact-form"> tag in index.html.
 
 FONTS
   Space Grotesk and Manrope load from Google Fonts over the internet.
