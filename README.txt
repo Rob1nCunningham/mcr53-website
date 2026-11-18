@@ -15,12 +15,11 @@ index.html directly in a browser to preview it, or see "Going live"
 below to publish it properly.
 
 BEFORE YOU LAUNCH — replace these placeholders
+  (Email and LinkedIn links were removed until a mailbox and profile
+  exist; add them back to the Contact section and footer then.)
   Search index.html for square brackets [ ] and fill in:
-    - [hello@mcr53.co.uk]                  → your real email
     - [Add phone number]                   → Contact section
-    - [Add LinkedIn URL]                   → footer + Contact section
     - [Confirm base location]              → Contact section
-    - [Company registered in England...]   → footer, or delete the line
     - [Add 2–3 sentences on your background...] → About section
     - [Add founder photo]                  → About section (replace the
       dashed placeholder box with a real <img>)

@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       })
       .catch(function () {
-        status.textContent = "Something went wrong sending that — please email us directly at hello@mcr53.co.uk instead.";
+        status.textContent = "Something went wrong sending that — please try again in a moment.";
         status.classList.add('form-status-error');
         submitBtn.disabled = false;
       });
