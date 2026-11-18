@@ -18,8 +18,6 @@ BEFORE YOU LAUNCH — replace these placeholders
   (Email and LinkedIn links were removed until a mailbox and profile
   exist; add them back to the Contact section and footer then.)
   Search index.html for square brackets [ ] and fill in:
-    - [Add phone number]                   → Contact section
-    - [Confirm base location]              → Contact section
     - [Add 2–3 sentences on your background...] → About section
     - [Add founder photo]                  → About section (replace the
       dashed placeholder box with a real <img>)
